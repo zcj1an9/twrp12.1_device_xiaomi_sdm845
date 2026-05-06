@@ -24,7 +24,7 @@
 # components.
 
 # Default device path
-DEVICE_PATH := device/xiaomi/equuleus
+DEVICE_PATH := device/xiaomi/perseus
 
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
@@ -73,8 +73,8 @@ BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
 BOARD_MKBOOTIMG_ARGS += --ramdisk_offset $(BOARD_RAMDISK_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --tags_offset $(BOARD_KERNEL_TAGS_OFFSET)
 BOARD_KERNEL_IMAGE_NAME := Image
-TARGET_KERNEL_CONFIG := equuleus_defconfig
-TARGET_KERNEL_SOURCE := kernel/xiaomi/equuleus
+TARGET_KERNEL_CONFIG := perseus_defconfig
+TARGET_KERNEL_SOURCE := kernel/xiaomi/perseus
 
 # Kernel - prebuilt
 TARGET_FORCE_PREBUILT_KERNEL := true
@@ -83,7 +83,7 @@ TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/kernel
 endif
 
 # OTA
-TARGET_OTA_ASSERT_DEVICE := equuleus
+TARGET_OTA_ASSERT_DEVICE := perseus
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 262144 # (BOARD_KERNEL_PAGESIZE * 64)
