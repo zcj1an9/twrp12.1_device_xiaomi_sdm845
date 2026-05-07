@@ -19,14 +19,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 
 # Inherit from device
-$(call inherit-product, device/xiaomi/equuleus/device.mk)
+$(call inherit-product, device/xiaomi/perseus/device.mk)
 
 # Inherit some common TWRP stuff.
 $(call inherit-product, vendor/twrp/config/common.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_NAME := twrp_equuleus
-PRODUCT_DEVICE := equuleus
+PRODUCT_NAME := twrp_perseus
+PRODUCT_DEVICE := perseus
 PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := MI 8 UD
+PRODUCT_MODEL := MIX 3
 PRODUCT_MANUFACTURER := Xiaomi
